@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="721.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharmacymanagementsystem.HelloController">
+   <children>
+      <AnchorPane fx:id="login_mainForm" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane prefHeight="85.0" prefWidth="722.0" styleClass="top" stylesheets="@../../../style.css">
+               <children>
+                  <AnchorPane layoutX="44.0" layoutY="4.0" prefHeight="75.0" prefWidth="145.0">
+                     <children>
+                        <Circle fill="WHITE" layoutX="74.0" layoutY="38.0" radius="41.0" stroke="BLACK" strokeType="OUTSIDE" />
+                        <Text fill="RED" layoutX="53.0" layoutY="45.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+">
+                           <font>
+                              <Font name="System Bold" size="60.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="207.0" layoutY="27.0" text="PHARMACY MANAGEMENT SYSTEM">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="14.0" layoutY="93.0" prefHeight="376.0" prefWidth="365.0" styleClass="cross" stylesheets="@../../../style.css">
+               <children>
+                  <Text layoutX="129.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOG IN">
+                     <font>
+                        <Font name="Arial Black" size="20.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="login_username" layoutX="70.0" layoutY="99.0" prefHeight="37.0" prefWidth="219.0" promptText="Enter username" />
+                  <PasswordField fx:id="login_password" layoutX="70.0" layoutY="163.0" prefHeight="30.0" prefWidth="219.0" promptText="Enter password" />
+                  <Button fx:id="loginBtn" layoutX="70.0" layoutY="228.0" mnemonicParsing="false" onAction="#loginBtn" prefHeight="30.0" prefWidth="70.0" styleClass="addBtn" stylesheets="@../../../style.css" text="Log In" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="402.0" layoutY="105.0" prefHeight="367.0" prefWidth="304.0" styleClass="right-bar" stylesheets="@../../../style.css">
+               <children>
+                  <ImageView fitHeight="186.0" fitWidth="276.0" layoutX="14.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Images/sideImage.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="closeBtn" layoutX="273.0" layoutY="3.0" mnemonicParsing="false" onAction="#closeBtn" styleClass="cancelBtn" stylesheets="@../../../style.css" text="X" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="106.0" layoutY="211.0" text="HEALTH TIPS">
+                     <font>
+                        <Font name="Arial Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="65.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seek medical attention anytime you have symptoms you are not familiar with" wrappingWidth="191.63671875">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Text>
+                  <Line endX="132.0" layoutX="152.0" layoutY="288.0" startX="-125.0" />
+                  <Text layoutX="59.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Self-medication is not an option" wrappingWidth="191.63671875">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Text>
+                  <Line endX="132.0" layoutX="154.0" layoutY="327.0" startX="-125.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
